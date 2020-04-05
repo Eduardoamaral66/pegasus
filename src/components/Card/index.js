@@ -3,7 +3,7 @@ import { useDrag, useDrop } from "react-dnd";
 import BoardContext from "../Board/context";
 import { Container, Label } from "./styles";
 
-export default function Card({ data, index, listIndex }) {
+export default function Card({ data, index, listIndex }) {  
   const ref = useRef();
   const { move } = useContext(BoardContext);
 
@@ -16,7 +16,7 @@ export default function Card({ data, index, listIndex }) {
 
   const [, dropRef] = useDrop({
     accept: "CARD",
-    hover(item, monitor) {
+    drop(item, monitor) {
       const draggedListIndex = item.listIndex;
       const targetListIndex = listIndex;
 
