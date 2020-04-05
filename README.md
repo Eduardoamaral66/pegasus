@@ -7,4 +7,4 @@ Projeto criado para fins de estudo seguindo tutorial da Rocketseat "Recriando Pi
 
 ## Demo
 
-![](demo/Demo_ Apr 5, 2020 4.gif)
+![](demo.gif)
